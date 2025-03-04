@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pobieranie zdjęć</title>
+    <script src="imageList.js"></script>
     <script>
         window.onload = function() {
-            const pliki = [
-                "images/ptok1.jpg",
-                "images/ptok2.jpg",
-                "images/ptok3.jpg",
-                "images/ptok4.jpg"
-            ];
-
-            pliki.forEach(function(url) {
+            imageFiles.forEach(function(url) {
                 const a = document.createElement("a");
                 a.href = url;
                 a.download = url.split('/').pop();
